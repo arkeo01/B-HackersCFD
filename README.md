@@ -8,7 +8,7 @@ The invention of Bitcoin introduced to the world a more robust technology tackli
 Before going forward to describe the actual idea we would like to first specify the problems that we are attempting to solve by this Dapp.
 
 
-### Election Helper Component
+### Election Helper Component:
 As we all know the importance of election it is equally important to know the importance of our elcetion process. To ease and make elections more transparent and clean the process should also be revamped. Thus we propose another componenet to our system which handles all the requests for nominations,form filling,news etc.We belive that blockchain can provide a vital and much simpler solutions to all these hectic parts of an election. Summary of features of our Election Helper Componenet can be found below:
 
 - **Filing Nominations**: Nominations of all the candidates whom are contesting in election, should fill their nomination form through this component of our system.This makes their information readily available to all at ease and more securely using the various hashing techniques used in Blockchain.Filing nominations through these process would also help us to validate all the information the candidate has provided with the previous details if he has some stored, thus making it near impossible for someone to change information and fill new nomination form in each election making election process more Secure and Democratic.
