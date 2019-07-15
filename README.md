@@ -5,8 +5,18 @@ The invention of Bitcoin introduced to the world a more robust technology tackli
 
 
 ## Problems in the current election process:
-Before going forward to describe the actual idea we would like to first specify the problems that we are attempting to solve by this Dapp.
+Before going forward to describe the actual idea we would like to first specify the problems and challenges that we are catering by this Dapp.
 
+**1. Nomination of Candidates:** Nomination of candidates involves submitting of various documents and currently there is no way to verify the validity of the documents submitted by a particular candidate.
+**2. EVM Hacking Accusation:** EVM has been consistenly being accussed of its hacking and the explaination by the Election Commission doesn't seem satisfying.
+**3. Fake Voting:** Faking voting takes place a lot of times when a particular person has changed location. 
+**4. Results Declaration:** The process of counting votes is a very cumbersome process taking an entire day.
+**5. Voters' names anomaly:** At times people are not able to find their names in the Electoral list.
+**6. Uninformed Descision:** People are generally unknown about a lot of information about the candidates such as education, criminal cases etc. which leads to making an uninformed and dumb decisions.
+
+## The Election System (Proper name to be given)
+
+For solving above given problems we propose an election system with two componenets described below:
 
 ### Election Helper Component:
 As we all know the importance of election it is equally important to know the importance of our elcetion process. To ease and make elections more transparent and clean the process should also be revamped. Thus we propose another componenet to our system which handles all the requests for nominations,form filling,news etc.We belive that blockchain can provide a vital and much simpler solutions to all these hectic parts of an election. Summary of features of our Election Helper Componenet can be found below:
@@ -26,3 +36,6 @@ As we all know the importance of election it is equally important to know the im
 - **Grievence Readdresal Portal**: Since a democracy is based on satisfaction of its citizens, thus addresing their grievences is a major part. Understanding this basic problem we had provided an option for grievence readdresal in our DApp thus making it easier for all the citizens to complaint about any injustice that happend to them or any inconvinience they faced.
 
 - **News Portal**: One of the major Headache in the season of Election is to keep track of all the announcements,news etc all day, and Fake news adding more fuel in the Headache. Thus our DApp seems to provide a streamlined solution to this problem by providing news from all the major reputed Sources in one place thus helping all the voters to keep a hand at all the major announcements, manifestos, news from all aroung the country and helping them to choose their representative more carefully.
+
+### Voting Component:
+To be written by Dhruv...
