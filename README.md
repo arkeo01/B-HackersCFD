@@ -18,6 +18,24 @@ Before going forward to describe the actual idea we would like to first specify 
 
 For solving above given problems we propose an election system with two componenets described below:
 
+### Voting Component:
+Election day is the essence of our democratic country, but conducting the most significant elections in the whole world can sometimes become a tedious affair. This component is designed keeping in mind a smooth voting experience, with a robust and straightforward backend to avoid any fake voting and hacking accusation.
+
+- **Secure Authentication**:
+All voters contesting in the elections would receive a QR code along with their voter ID which would be used to authenticate the voter. To make the process more secure, a biometric authentification will also be done, adding another layer of security to prevent fake voting. The component will also check for multiple voters ID's under the same name to ensure one person cannot make multiple votes.
+
+- **Universal Polling Booth**:
+Allocation of a particular polling booth is one of the primary reason that people are not able to show up to vote. Having a universal pooling booth system would let a voter cast his vote from any part of the country. (It depends on the type of elections. In a state election, the voter can vote from any polling booth of the state)
+
+- **Geo-fencing of the Polling Booth**
+ The machines would be Geo-fenced using GPS technology to avoid any tampering with the polling equipment and illegal voting outside the pooling booth.
+
+ - **Clean UI**
+The voting machines would provide a clear UI with enlarged text and images to clearly segregate different candidates and avoid any confusion. It would also provide the voters with a brief summary of the candidates if clicked on, to help the voters take an informed desicion (Check Election Helper Component ->Know your Candidate)
+
+- **Global Connectivity**
+The system is designed to work at places even with low or even no internet connectivity to ensure the coverage throughout India. (4G/3G/2G/USSD)
+
 ### Election Helper Component:
 As we all know the importance of election it is equally important to know the importance of our elcetion process. To ease and make elections more transparent and clean the process should also be revamped. Thus we propose another componenet to our system which handles all the requests for nominations,form filling,news etc.We belive that blockchain can provide a vital and much simpler solutions to all these hectic parts of an election. Summary of features of our Election Helper Componenet can be found below:
 
@@ -36,21 +54,3 @@ As we all know the importance of election it is equally important to know the im
 - **Grievence Readdresal Portal**: Since a democracy is based on satisfaction of its citizens, thus addresing their grievences is a major part. Understanding this basic problem we had provided an option for grievence readdresal in our DApp thus making it easier for all the citizens to complaint about any injustice that happend to them or any inconvinience they faced.
 
 - **News Portal**: One of the major Headache in the season of Election is to keep track of all the announcements,news etc all day, and Fake news adding more fuel in the Headache. Thus our DApp seems to provide a streamlined solution to this problem by providing news from all the major reputed Sources in one place thus helping all the voters to keep a hand at all the major announcements, manifestos, news from all aroung the country and helping them to choose their representative more carefully.
-
-### Voting Component:
-Election day is the essence of our democratic country, but conducting the most significant elections in the whole world can sometimes become a tedious affair. This component is designed keeping in mind a smooth voting experience, with a robust and straightforward backend to avoid any fake voting and hacking accusation.
-
-- **Secure Authentication**:
-All voters contesting in the elections would receive a QR code along with their voter ID which would be used to authenticate the voter. To make the process more secure, a biometric authentification will also be done, adding another layer of security to prevent fake voting. The component will also check for multiple voters ID's under the same name to ensure one person cannot make multiple votes.
-
-- **Universal Polling Booth**:
-Allocation of a particular polling booth is one of the primary reason that people are not able to show up to vote. Having a universal pooling booth system would let a voter cast his vote from any part of the country. (It depends on the type of elections. In a state election, the voter can vote from any polling booth of the state)
-
-- **Geo-fencing of the Polling Booth**
- The machines would be Geo-fenced using GPS technology to avoid any tampering with the polling equipment and illegal voting outside the pooling booth.
-
- - **Clean UI**
-The voting machines would provide a clear UI with enlarged text and images to clearly segregate different candidates and avoid any confusion. It would also provide the voters with a brief summary of the candidates if clicked on, to help the voters take an informed desicion (Check Election Helper Component ->Know your Candidate)
-
-- **Global Connectivity**
-The system is designed to work at places even with low or even no internet connectivity to ensure the coverage throughout India. (4G/3G/2G/USSD)
