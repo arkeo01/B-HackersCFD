@@ -19,7 +19,7 @@ Before going forward to describe the actual idea we would like to first specify 
 
 For solving above given problems, **We propose an election system with two componenets** described below:
 
-### Voting Component:
+### 1. Voting Component(only accessible to special Centers aka Polling booths):
 Election day is the essence of our democratic country, but conducting the most significant elections in the whole world can sometimes become a tedious affair. This component is designed keeping in mind a smooth voting experience, with a robust and straightforward backend to avoid any fake voting and hacking accusation.
 
 - **Secure Authentication**:
@@ -37,7 +37,7 @@ The voting machines would provide a clear UI with enlarged text and images to cl
 - **Global Connectivity**
 The system is designed to work at places even with low or even no internet connectivity to ensure the coverage throughout India. (4G/3G/2G/USSD)
 
-### Election Helper Component:
+### 2. Election Helper Component(accessible to all of the voters):
 As we all know the importance of election it is equally important to know the importance of our elcetion process. To ease and make elections more transparent and clean the process should also be revamped. Thus we propose another componenet to our system which handles all the requests for nominations,form filling,news etc.We belive that blockchain can provide a vital and much simpler solutions to all these hectic parts of an election. Summary of features of our Election Helper Componenet can be found below:
 
 - **Filing Nominations**: Nominations of all the candidates whom are contesting in election, should fill their nomination form through this component of our system.This makes their information readily available to all at ease and more securely using the various hashing techniques used in Blockchain.Filing nominations through these process would also help us to validate all the information the candidate has provided with the previous details if he has some stored, thus making it near impossible for someone to change information and fill new nomination form in each election making election process more Secure and Democratic.
