@@ -9,6 +9,7 @@ Before going forward to describe the actual idea we would like to first specify 
 
 1. **Nomination of Candidates:** Nomination of candidates involves submitting of various documents and currently there is no way to verify the validity of the documents submitted by a particular candidate.
 2. **EVM Hacking Accusation:** EVM has been consistenly being accussed of its hacking and the explaination by the Election Commission doesn't seem satisfying.
+![News Credits- India Today](https://github.com/arkeo01/B-HackersCFD/blob/master/EVM_Acquisition.png)
 3. **Fake Voting:** Faking voting takes place a lot of times when a particular person has changed location. 
 4. **Results Declaration:** The process of counting votes is a very cumbersome process taking an entire day.
 5. **Voters' names anomaly:** At times people are not able to find their names in the Electoral list.
