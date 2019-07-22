@@ -9,16 +9,37 @@ Before going forward to describe the actual idea we would like to first specify 
 
 1. **Nomination of Candidates:** Nomination of candidates involves submitting of various documents and currently there is no way to verify the validity of the documents submitted by a particular candidate.
 2. **EVM Hacking Accusation:** EVM has been consistenly being accussed of its hacking and the explaination by the Election Commission doesn't seem satisfying.
+
+
 ![News Credits- India Today](https://github.com/arkeo01/B-HackersCFD/blob/master/EVM_Acquisition.png)
+
+
 3. **Fake Voting:** Faking voting takes place a lot of times when a particular person has changed location. 
+
+
 ![News Credits- News-18](https://github.com/arkeo01/B-HackersCFD/blob/master/Fake_voting.png)
+
+
 4. **Results Declaration:** The process of counting votes is a very cumbersome process taking an entire day.
+
 5. **Voters' names anomaly:** At times people are not able to find their names in the Electoral list.
+
+
 ![News Credits- NDTV](https://github.com/arkeo01/B-HackersCFD/blob/master/Name_anamoly.png)
+
+
 6. **Uninformed Descision:** People are generally unknown about a lot of information about the candidates such as education, criminal cases etc. which leads to making an uninformed and dumb decisions.
+
+
 ![News Credits- Navbharat Times](https://github.com/arkeo01/B-HackersCFD/blob/master/uninformed_votes.png)
-7. **Unavailiability of Voter in Constituency:** Many of times it happens that one person that is registered in his/her constituency but currently is doing work/job in any other part of India and is not possible for him/her to come and cast vote.
+
+
+7. **Unavailiability of Voter in Constituency:** Many of times it happens that one person that is registered in his/her constituency but currently is doing work/job in any other part of India and is not possible for him/her to come and cast 
+vote.
+
+
 ![News Credits- Live Mint](https://github.com/arkeo01/B-HackersCFD/blob/master/Voter_consituency.png)
+
 
 ## The Election System (Proper name to be given)
 
