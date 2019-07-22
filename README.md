@@ -13,10 +13,11 @@ Before going forward to describe the actual idea we would like to first specify 
 4. **Results Declaration:** The process of counting votes is a very cumbersome process taking an entire day.
 5. **Voters' names anomaly:** At times people are not able to find their names in the Electoral list.
 6. **Uninformed Descision:** People are generally unknown about a lot of information about the candidates such as education, criminal cases etc. which leads to making an uninformed and dumb decisions.
+7. **Unavailiability of Voter in Constituency:** Many of times it happens that one person that is registered in his/her constituency but currently is doing work/job in any other part of India and is not possible for him/her to come and cast vote.
 
 ## The Election System (Proper name to be given)
 
-For solving above given problems we propose an election system with two componenets described below:
+For solving above given problems, **We propose an election system with two componenets** described below:
 
 ### Voting Component:
 Election day is the essence of our democratic country, but conducting the most significant elections in the whole world can sometimes become a tedious affair. This component is designed keeping in mind a smooth voting experience, with a robust and straightforward backend to avoid any fake voting and hacking accusation.
