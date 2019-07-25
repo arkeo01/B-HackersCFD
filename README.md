@@ -1,4 +1,4 @@
-# The Election System by the B-Hackers
+# The Election Ecosystem by the B-Hackers
 India is the largest democracy in the world. In democracies everywhere around the world Elections play an integral role. But with the population of the size of roughly 1.3 Billion, conducting fair elections involves tackling a lot of challenges. Also in the recent times a lot of parties have been consistently accussing EVMs of its safety and moreover there have been a lot of errors in the process leading to sometimes wrong candidate getting elected. Hence, a question arises whether a more secure process exists, that can be employed in place of the existing one... 
 
 The invention of Bitcoin introduced to the world a more robust technology tackling very fundamental human problems like security, transparancy and trust establishment. Looking into the future the same properties of blockchain can provide a suitable alternative in developing a process that is more transparent, secure and trustworthy. We as inquisitive engineers of IIT Jodhpur are hereby trying to develop the same alternative using Ethereum/Hyperledger Blockchain the details of which are given in this document.
@@ -108,6 +108,16 @@ India with the population of over 1.3 billion with a voting population in millio
 
 #### 2. Privacy : 
 Ensuring that each person votes in a very secure manner without the risk of being tampered and more importantly keeping in mind the principle of secrecy of the voter is again a challenge which is to be solved. **zk-SNARKS may be used to solve this problem**
+
+## Tentative Implementation 
+
+#### 1. MultiSig While Voting 
+
+#### 2. zk-Snarks to be used for identity verification
+
+#### 3. Cryptographically signed voter Id to be generated for each user by government
+
+#### 4. <Implementation for scalability i.e. increasing no. of transactions/second>
 
 ## Tech Stack Used 
 - Nodejs
