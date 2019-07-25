@@ -7,7 +7,7 @@ The invention of Bitcoin introduced to the world a more robust technology tackli
 ## Problems in the current election process:
 Before going forward to describe the actual idea we would like to first specify the problems and challenges that we are catering by this Dapp.
 
-#### 1.Nomination of Candidates: 
+#### 1. Nomination of Candidates: 
   Nomination of candidates involves submitting of various documents and currently there is no way to verify the validity of the documents submitted by a particular candidate.
 #### 2. EVM Hacking Accusation: 
 EVM has been consistenly being accussed of its hacking and the explaination by the Election Commission doesn't seem satisfying.
@@ -16,27 +16,31 @@ EVM has been consistenly being accussed of its hacking and the explaination by t
 ![News Credits- India Today](https://github.com/arkeo01/B-HackersCFD/blob/master/EVM_Acquisition.png)
 
 
-3. **Fake Voting:** Faking voting takes place a lot of times when a particular person has changed location. 
+#### 3. Fake Voting: 
+Faking voting takes place a lot of times when a particular person has changed location. 
 
 
 ![News Credits- News-18](https://github.com/arkeo01/B-HackersCFD/blob/master/Fake_voting.png)
 
+#### 4. Results Declaration: 
+The process of counting votes is a very cumbersome process taking an entire day.
 
-4. **Results Declaration:** The process of counting votes is a very cumbersome process taking an entire day.
-
-5. **Voters' names anomaly:** At times people are not able to find their names in the Electoral list.
+#### 5. Voters' names anomaly: 
+At times people are not able to find their names in the Electoral list.
 
 
 ![News Credits- NDTV](https://github.com/arkeo01/B-HackersCFD/blob/master/Name_anamoly.png)
 
 
-6. **Uninformed Descision:** People are generally unknown about a lot of information about the candidates such as education, criminal cases etc. which leads to making an uninformed and dumb decisions.
+#### 6. Uninformed Descision:
+People are generally unknown about a lot of information about the candidates such as education, criminal cases etc. which leads to making an uninformed and dumb decisions.
 
 
 ![News Credits- Navbharat Times](https://github.com/arkeo01/B-HackersCFD/blob/master/uninformed_votes.png)
 
 
-7. **Unavailiability of Voter in Constituency:** Many of times it happens that one person that is registered in his/her constituency but currently is doing work/job in any other part of India and is not possible for him/her to come and cast 
+#### 7. Unavailiability of Voter in Constituency:
+Many of times it happens that one person that is registered in his/her constituency but currently is doing work/job in any other part of India and is not possible for him/her to come and cast 
 vote.
 
 
@@ -95,4 +99,18 @@ As we all know the importance of election it is equally important to know the im
 
 
 ![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Flowchart_3.jpg)
+
+## Challenges to be encountered
+Though being developed and improved by a very vibrant community, Blockchain Technology is currently in its infancy and hence in the process of developing a sytem for conducting elections on blockchain following are the challenges that lie in front of us: 
+
+#### 1. Scalability : 
+India with the population of over 1.3 billion with a voting population in millions the scale at which elections are conducted is massive. Currently, the no. of transactions processed per second are in the range of 3-20. Hence building a system with this big of a scale where millions of transactions are supposed to be performed simultaneously is a humongous challenge.
+
+#### 2. Privacy : 
+Ensuring that each person votes in a very secure manner without the risk of being tampered and more importantly keeping in mind the principle of secrecy of the voter is again a challenge which is to be solved. **zk-SNARKS may be used to solve this problem**
+
+## Tech Stack Used 
+- Nodejs
+- Solidity
+- More to be added
 
