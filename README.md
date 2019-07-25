@@ -7,9 +7,10 @@ The invention of Bitcoin introduced to the world a more robust technology tackli
 ## Problems in the current election process:
 Before going forward to describe the actual idea we would like to first specify the problems and challenges that we are catering by this Dapp.
 
-#### 1.**Nomination of Candidates:** 
+#### 1.Nomination of Candidates: 
   Nomination of candidates involves submitting of various documents and currently there is no way to verify the validity of the documents submitted by a particular candidate.
-2. **EVM Hacking Accusation:** EVM has been consistenly being accussed of its hacking and the explaination by the Election Commission doesn't seem satisfying.
+#### 2. EVM Hacking Accusation: 
+EVM has been consistenly being accussed of its hacking and the explaination by the Election Commission doesn't seem satisfying.
 
 
 ![News Credits- India Today](https://github.com/arkeo01/B-HackersCFD/blob/master/EVM_Acquisition.png)
