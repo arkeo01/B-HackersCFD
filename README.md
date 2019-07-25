@@ -45,6 +45,8 @@ vote.
 
 For solving above given problems, **We propose an election system with two componenets** described below:
 
+![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Flowchart_1.jpg)
+
 ### 1. Voting Component(only accessible to special Centers aka Polling booths):
 Election day is the essence of our democratic country, but conducting the most significant elections in the whole world can sometimes become a tedious affair. This component is designed keeping in mind a smooth voting experience, with a robust and straightforward backend to avoid any fake voting and hacking accusation.
 
