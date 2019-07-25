@@ -65,6 +65,13 @@ The voting machines would provide a clear UI with enlarged text and images to cl
 - **Global Connectivity**
 The system is designed to work at places even with low or even no internet connectivity to ensure the coverage throughout India. (4G/3G/2G/USSD)
 
+
+![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Flowchart_2.jpg)
+
+
+
+
+
 ### 2. Election Helper Component(accessible to all of the voters):
 As we all know the importance of election it is equally important to know the importance of our elcetion process. To ease and make elections more transparent and clean the process should also be revamped. Thus we propose another componenet to our system which handles all the requests for nominations,form filling,news etc.We belive that blockchain can provide a vital and much simpler solutions to all these hectic parts of an election. Summary of features of our Election Helper Componenet can be found below:
 
@@ -83,3 +90,7 @@ As we all know the importance of election it is equally important to know the im
 - **Grievence Readdresal Portal**: Since a democracy is based on satisfaction of its citizens, thus addresing their grievences is a major part. Understanding this basic problem we had provided an option for grievence readdresal in our DApp thus making it easier for all the citizens to complaint about any injustice that happend to them or any inconvinience they faced.
 
 - **News Portal**: One of the major Headache in the season of Election is to keep track of all the announcements,news etc all day, and Fake news adding more fuel in the Headache. Thus our DApp seems to provide a streamlined solution to this problem by providing news from all the major reputed Sources in one place thus helping all the voters to keep a hand at all the major announcements, manifestos, news from all aroung the country and helping them to choose their representative more carefully.
+
+
+![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Flowchart_3.jpg)
+
