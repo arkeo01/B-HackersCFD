@@ -34,10 +34,10 @@ With the progression of technology, humanity has discovered new ways of doing th
 Election day is the essence of our democratic country, but conducting the most significant elections in the whole world can sometimes become a tedious affair. This component is designed keeping in mind a smooth voting experience, with a robust backend to avoid any fake voting and hacking accusation.
 
 #### Voting Process : 
-###### 1. Registration of Voter : 
+##### 1. Registration of Voter : 
 Any citizen of India with age 18 or above would be registering himself/herself with the help of the election helper component by providing the necesary documents. A cryptographically signed voter id with a QR Code linked with unique identification detail(like fingerprint) of the voter would be then issued by the system to the citizen allowing him/her to vote.
 
-###### 2. Voting at the nearby polling station : 
+##### 2. Voting at the nearby polling station : 
 On reaching the polling station the QR Code would be then scanned and then verified with the unique identification detail of the voter. The list of candidates contesting the elections from the voter's residing constituency would then pop up on the screen from which the voter can select and caste vote.
 
 - **Secure Authentication**:
