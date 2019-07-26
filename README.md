@@ -26,7 +26,7 @@ Many of times it happens that one person that is registered in his/her constitue
 
 ## The Election System (Proper name to be given)
 
-For solving above given problems, **We propose an election system with two components** described below:
+With the progression of technology, humanity has discovered new ways of doing things which previously thought as impossible. Keeping this in mind, as a solution to all the problems stated above, we propose an entirely new way of conducting elections. We propose to build a complete one of its kind ecosystem in which smooth, free and fair, secure, fast and reliable way of conducting the elections, proper dissemination of information and assistance to voters for making an informed decision would be carried out. This would be achieved by employing a very unique combination of technologies from Web2.0 and Web3.0. Hence we propose an **election system with two components** described below:
 
 ![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/both.png)
 
