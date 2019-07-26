@@ -12,11 +12,11 @@ Before going forward to describe the original idea, we would like first to speci
 #### 2. EVM Hacking Accusation: 
 EVM has been consistently being accused of its hacking, and the explanation by the Election Commission doesn't seem satisfying.
 #### 3. Fake Voting: 
-Faking Voting takes place a lot of times when a particular person has changed location. 
+Faking Voting takes place a lot of times when a particular person has changed location or died.
 #### 4. Results Declaration: 
 The process of counting votes is a very cumbersome process taking an entire day.
-#### 5. Voters' names anomaly: 
-At times people are not able to find their names in the Electoral list.
+#### 5. Names missing from voter's list: 
+At times people are not able to find their names in the Electoral list due to which they are not able to cast their votes.
 #### 6. Uninformed Decisions:
 People are generally unknown about a lot of information about the candidates such as education, criminal cases, etc. which leads to making uninformed and dumb decisions.
 #### 7. Unavailability of Voter in Constituency:
