@@ -26,12 +26,19 @@ Many of times it happens that one person that is registered in his/her constitue
 
 ## The Election System (Proper name to be given)
 
-With the progression of technology, humanity has discovered new ways of doing things which previously thought as impossible. Keeping this in mind, as a solution to all the problems stated above, we propose an entirely new way of conducting elections. We propose to build a complete one of its kind ecosystem in which smooth, free and fair, secure, fast and reliable way of conducting the elections, proper dissemination of information and assistance to voters for making an informed decision would be carried out. This would be achieved by employing a very unique combination of technologies from Web2.0 and Web3.0. Hence we propose an **election system with two components** described below:
+With the progression of technology, humanity has discovered new ways of doing things which previously thought as impossible. Keeping this in mind, as a solution to all the problems stated above, we propose an entirely new way of conducting elections. We propose to build a complete one of its kind ecosystem in which smooth, free and fair, secure, fast and reliable way of conducting the elections, proper dissemination of information and assistance to voters for making an informed decision would be carried out. This would be achieved by employing a very unique combination of technologies from Web2.0 and Web3.0. Hence we propose an **election system with two components** which would work hand in hand to achieve the solution to all the problems. The two solutions are described below: 
 
 ![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/both.png)
 
 ### 1. Voting Component(only accessible to special Centers aka Polling booths):
-Election day is the essence of our democratic country, but conducting the most significant elections in the whole world can sometimes become a tedious affair. This component is designed keeping in mind a smooth voting experience, with a robust and straightforward backend to avoid any fake voting and hacking accusation.
+Election day is the essence of our democratic country, but conducting the most significant elections in the whole world can sometimes become a tedious affair. This component is designed keeping in mind a smooth voting experience, with a robust backend to avoid any fake voting and hacking accusation.
+
+#### Voting Process : 
+###### 1. Registration of Voter : 
+Any citizen of India with age 18 or above would be registering himself/herself with the help of the election helper component by providing the necesary documents. A cryptographically signed voter id with a QR Code linked with unique identification detail(like fingerprint) of the voter would be then issued by the system to the citizen allowing him/her to vote.
+
+###### 2. Voting at the nearby polling station : 
+On reaching the polling station the QR Code would be then scanned and then verified with the unique identification detail of the voter. The list of candidates contesting the elections from the voter's residing constituency would then pop up on the screen from which the voter can select and caste vote.
 
 - **Secure Authentication**:
 All voters contesting in the elections would receive a QR code along with their voter ID which would be used to authenticate the voter. To make the process more secure, a biometric authentification will also be done, adding another layer of security to prevent fake Voting. The component will also check for multiple voters ID's under the same name to ensure one person cannot make many votes.
