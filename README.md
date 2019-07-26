@@ -23,12 +23,13 @@ People are generally unknown about a lot of information about the candidates suc
 Many of times it happens that one person that is registered in his/her constituency but currently is doing work/job in any other part of India and is not possible for him/her to come and cast 
 vote.
 
+![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/news.jpg)
 
 ## The Election System (Proper name to be given)
 
 For solving above given problems, **We propose an election system with two componenets** described below:
 
-![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Flowchart_1.jpg)
+![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/both.png)
 
 ### 1. Voting Component(only accessible to special Centers aka Polling booths):
 Election day is the essence of our democratic country, but conducting the most significant elections in the whole world can sometimes become a tedious affair. This component is designed keeping in mind a smooth voting experience, with a robust and straightforward backend to avoid any fake voting and hacking accusation.
@@ -49,7 +50,7 @@ The voting machines would provide a clear UI with enlarged text and images to cl
 The system is designed to work at places even with low or even no internet connectivity to ensure the coverage throughout India. (4G/3G/2G/USSD)
 
 
-![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Flowchart_2.jpg)
+![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Voting_component.png)
 
 
 
@@ -75,7 +76,7 @@ As we all know the importance of election it is equally important to know the im
 - **News Portal**: One of the major Headache in the season of Election is to keep track of all the announcements,news etc all day, and Fake news adding more fuel in the Headache. Thus our DApp seems to provide a streamlined solution to this problem by providing news from all the major reputed Sources in one place thus helping all the voters to keep a hand at all the major announcements, manifestos, news from all aroung the country and helping them to choose their representative more carefully.
 
 
-![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Flowchart_3.jpg)
+![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Election_helper_Component.png)
 
 ## Challenges to be encountered
 Though being developed and improved by a very vibrant community, Blockchain Technology is currently in its infancy and hence in the process of developing a sytem for conducting elections on blockchain following are the challenges that lie in front of us: 
