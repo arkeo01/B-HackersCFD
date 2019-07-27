@@ -21,6 +21,8 @@ At times people are not able to find their names in the Electoral list due to wh
 People are generally unknown about a lot of information about the candidates such as education, criminal cases, etc. which leads to making uninformed and dumb decisions.
 #### 7. Unavailability of Voter in Constituency:
 Many of times it happens that one person that is registered in his/her constituency but currently is doing work/job in any other part of India and is not possible for him/her to come and cast a vote.
+#### 8. Booth Capturing:
+In the current system there is a risk of booth capturing as EVMs currently do not have the ability to verify whether only one vote can be casted by any citizen. Hence there are many a times instances of booth capturing and multiple votes are given by a single person.
 
 ![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/news.jpg)
 
@@ -35,52 +37,87 @@ Election day is the essence of our democratic country, but conducting the most s
 
 #### Voting Process : 
 ##### 1. Registration of Voter : 
-Any citizen of India with age 18 or above would be registering himself/herself with the help of the election helper component by providing the necesary documents. A cryptographically signed voter id with a QR Code linked with unique identification detail(like fingerprint) of the voter would be then issued by the system to the citizen allowing him/her to vote.
+Any citizen of India with age 18 or above would be registering himself/herself with the help of the election helper component by providing the necesary documents. A cryptographically signed voter id with a QR Code(linked with unique identification detail like fingerprint) and a voToken, token used for voting would be then issued by the system to the citizen allowing him/her to vote.
 
 ##### 2. Voting at the nearby polling station : 
-On reaching the polling station the QR Code would be then scanned and then verified with the unique identification detail of the voter. The list of candidates contesting the elections from the voter's residing constituency would then pop up on the screen from which the voter can select and caste vote.
+On reaching the polling station the QR Code would be then scanned and then verified with the unique identification detail of the voter. The list of candidates contesting the elections from the voter's residing constituency would then pop up on the screen from which the voter can select and caste vote. While casting the vote multiple signatures would be required, both of presiding officer and the voter.
 
-- **Secure Authentication**:
-All voters contesting in the elections would receive a QR code along with their voter ID which would be used to authenticate the voter. To make the process more secure, a biometric authentification will also be done, adding another layer of security to prevent fake Voting. The component will also check for multiple voters ID's under the same name to ensure one person cannot make many votes.
+**INCLUDE A FLOW DIAGRAM HERE**
 
-- **Universal Polling Booth**:
-Allocation of a particular polling booth is one of the primary reason that people are not able to show up to vote. Having a universal pooling booth system would let a voter cast his vote from any part of the country. (It depends on the type of elections. In a state election, the voter can vote from any polling booth of the state)
+#### Features :
+##### 1. Secure Authentication :
+All voters contesting in the elections would receive a QR code along with their voter ID which would be used to authenticate the voter. A biometric authentication will also be done, to ensure the validity of the voter, adding another layer of security to prevent fake Voting. 
 
-- **Geo-fencing of the Polling Booth**
+##### 2. Booth Capturing Proof :
+Authentication before casting vote and only one VoToken issued to each voter ensures the prevention from booth capturing.
+  
+##### 3. Remote Voting :
+Voter are required to authenticate into the system and the constituency of the voter is detected automatically. This would let a voter cast his vote from any part of the country. (It depends on the type of elections. In a state election, the voter can vote from any polling booth of the state).
+
+##### 4. Privacy of Voter :
+Cryptographic techniques like zkSNARKS would be used to ensure that the vote stays private and no information about the voter is revealed by looking at the transactions.
+
+##### 4. Geo-fencing of the Polling Booth :
  The machines would be Geo-fenced using GPS technology to avoid any tampering with the polling equipment and illegal Voting outside the pooling booth.
 
- - **Clean UI**
-The voting machines would provide a clear UI with enlarged text and images to segregate different candidates and avoid any confusion. It would also give the voters with a summary of the candidates if clicked on, to help the voters make an informed decision (Check Election Helper Component ->Know your Candidate)
+##### 5. Clean UI :
+Though this feature seems very obvious but it is a serious problem when a voter is of a very old age or illeterate. The voting machines would provide a clear UI with enlarged text and images to segregate different candidates and avoid any confusion.
 
-- **Global Connectivity**
+##### 6. Global Connectivity :
 The system is designed to work at places even with low or even no internet connectivity to ensure the coverage throughout India. (4G/3G/2G/USSD)
 
 
 ![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Voting_component.png)
 
 
-
-
-
 ### 2. Election Helper Component(accessible to all of the voters):
-As we all know the importance of the election, it is equally important to know the importance of our election process. To ease and make elections more transparent and clean the process should also be revamped. Thus we propose another component to our system which handles all the requests for nominations, form filling, news, etc. We believe that Blockchain can provide a vital and much simpler solution to all these hectic parts of an election. Summary of features of our Election Helper Component can be found below:
+To ease and make elections more transparent, clean and efficient this component is added. This component of the system is added to provide the supporting processes of elections like filing of nomination, applying for voter id, dissemination of official news, declaration of results etc. We believe that Blockchain can provide a vital and much simpler solution to all these hectic parts of an election. 
 
-- **Filing Nominations**: Nominations of all the candidates who are contesting in the election, should fill their nomination form through this component of our system. This makes their information readily available to all at ease and more securely using the various hashing techniques used in Blockchain. Filing nominations through these process would also help us to validate all the information the candidate has provided with the previous details if he has some stored, thus making it near impossible for someone to change information and fill new nomination form in each election making the election process more Secure and Democratic.
+#### Processes : 
+##### 1. Applying for voter id :
+1. A request would be generated by the citizen in the system.
+2. Appropriate documents would be submitted digitally.
+3. Unique Identification detail like fingerprint of the person to be recorded.
+4. Verification of the documents to be undertaken by the officials.
+5. Voter Id with a QR Code linked with the unique identification detail to be generated and issued to the person.
 
-- **Applying for New Voter-ID/Managing New Voter ID(Unique Identification Number)**: All the persons who had crossed the mark of 18 years (in India) are eligible for Voting, hence providing them with their unique identification number is a big headache, but with the help of Blockchain this task becomes much more comfortable and secure and preventing various frauds such as Double Registration, Fake Registration, False Information Updates, Updating the list of available voter. This feature of our component includes features such as Registration of new User, Updation of Information in Existing Users, Validation of all the information provided, etc.
 
-- **Know your Candidate**: As the basic principle of democracy suggests people themselves select their representative, to help all the citizens to make a better and understood choice our app would provide some assistance in the form of this feature. Many of the times people cast their votes/ make their opinions by just listening to other people, news, and rumors which may or may not be true thus in helping to remove this ambiguity, we are providing with some fundamental things which we think would help a citizen to make a better decision namely,
-    1. Details of him, which he had supplied in the nomination form.
+**INCLUDE A FLOW DIAGRAM HERE**
+
+##### 2. Filling of Nominations :
+1. A request would be generated by the citizen in the system.
+2. Appropriate documents would be submitted digitally.
+3. Documents would undergo scrutiny by the election officials.
+4. A token linked to a constituency would be issued to the person indicating it to be a candidate.
+
+
+**INCLUDE A FLOW DIAGRAM HERE**
+
+#### Features:
+
+##### 1. Filing Nominations: 
+Nominations of all the candidates who are contesting in the election, would fill their nomination form through this component. This makes their information readily available to all at ease and more securely using the various hashing techniques used in Blockchain. Filing nominations through these process would also help us to validate all the information the candidate across different elections he has contested.
+
+##### 2. Applying for New Voter-ID/Managing Voter ID : 
+This component would allow any citizen of India with 18 or above years of age to get themselves registered for voting. Also the feature for managing the voter id(such as change in the location of the voter) will also be provided by this component.
+
+##### 3. Security from fake voting : 
+With the help of blockchain, the provenance of the information of all the voters would be stored securely on the blockchain. Hence instances of fake voting and voting of same voter from two different locations are curbed.
+
+##### 4. Know your Candidate : 
+The vote of a voter is often influenced by other peoples' opinion, news, rumors(which may not be true), etc. thus with the help of this component we aim to bring the information about the candidates at the fingerprints of a voter to help one to make an informed decision. Hence we provide the following information : 
+    1. Details of condidates like education, criminal cases, etc.
     2. The promises he made for his constituency.
-    3. Past promises made and list of completed things(In case he/she is standing again).
-    4. Recent news and Present News and Criminal records.
+    3. Past promises made and list of completed ones(In case he/she is contesting again).
    
-- **Instant Results**: As the elections are going more transparent and more accessible, we would propose to show elections results on the same day after the Voting ends, as it would save a lot of time(3-4 days of EVM collection and one whole exclusive day for Voting). Hence avoiding less chance of breaking security and usage of less human resources.
+##### 5. Instant Results :
+By this component the results would be displayed instantly after the ending of voting time period saving a lot of time(3-4 days of EVM collection and one whole exclusive day for Vote counting). Hence dramatically decreasing the chances of brealing security and decreasing the resources and capital needed.
 
-- **Grievance Readdresal Portal**: Since democracy is based on the satisfaction of its citizens, thus addressing their grievances is a significant part. Understanding this underlying problem, we had provided an option for grievance redressal in our DApp, thus making it easier for all the citizens to complain about any injustice that happened to them or any inconvenience they faced.
+##### 6. Grievance Readdresal Portal:
+Since democracy is based on the satisfaction of its citizens, thus addressing their grievances is a significant part. Understanding this underlying problem, we had provided an option for grievance redressal in our DApp, thus making it easier for all the citizens to complain about any injustice that happened to them or any inconvenience they faced.
 
-- **News Portal**: One of the significant Headache in the season of election is to keep track of all the announcements, news, etc. all day, and Fake news adding more fuel in the Headache. Thus our DApp seems to provide a streamlined solution to this problem by providing news from all the primary reputed Sources in one place thus helping all the voters to keep a hand at all the major announcements, manifestos, news from all around the country and helping them to choose their representative more carefully.
-
+##### 7. Prevention from missing names : 
+The specified registration process of the voter is such that it itself ensures that no name would be missing from the voters list as the list would be stored in a secured daabase built on blockchain. Moreover the authentication process while voting itself ensures that no name is needed to be verified in the voting list before voting!
 
 ![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Election_helper_Component.png)
 
