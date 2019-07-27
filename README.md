@@ -42,7 +42,7 @@ Any citizen of India with age 18 or above would be registering himself/herself w
 ##### 2. Voting at the nearby polling station : 
 On reaching the polling station the QR Code would be then scanned and then verified with the unique identification detail of the voter. The list of candidates contesting the elections from the voter's residing constituency would then pop up on the screen from which the voter can select and caste vote. While casting the vote multiple signatures would be required, both of presiding officer and the voter.
 
-**DHRUV INCLUDE A FLOW DIAGRAM HERE**
+![Credits- dhruv0000](https://github.com/arkeo01/B-HackersCFD/blob/master/VoterID.png)
 
 #### Features :
 ##### 1. Secure Authentication :
