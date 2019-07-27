@@ -121,14 +121,8 @@ The specified registration process of the voter is such that it itself ensures t
 
 ![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Election_helper_Component.png)
 
-## Challenges to be encountered
-Though being developed and improved by a very vibrant community, Blockchain Technology is currently in its infancy and hence in the process of developing a system for conducting elections on blockchain following are the challenges that lie in front of us: 
-
-#### 1. Scalability : 
-India, with a population of over 1.3 billion with a voting population in millions the scale at which elections are conducted is massive. Currently, the no. of transactions processed per second are in the range of 3-20. Hence building a system with this big of a scale where millions of transactions are supposed to be performed simultaneously is a humongous challenge.
-
-#### 2. Privacy : 
-Ensuring that each person votes in a very secure manner without the risk of being tampered and more importantly keeping in mind the principle of secrecy of the voter is again a challenge which is to be solved. **zk-SNARKS may be used to solve this problem**
+## Note on scalability :
+As it is very well known that scalability is a huge challenge that currently lies in front of the blockchain community it presents a challenge in this system as well. Currently the number of transactions per second in the Ethereum network is in the range of 3-10 transactions per second. Though there is no generalized method for scaling known yet, but few solutions do show some hope which may be the answer to scalability for this application. Currently we are thinking of implementing the technique of sharding of the blockchain but **this is not finalized and may be changed** depending on further implementation details of this project.
 
 ## Tentative Implementation 
 
@@ -143,5 +137,6 @@ Ensuring that each person votes in a very secure manner without the risk of bein
 ## Tech Stack Used 
 - Nodejs
 - Solidity
+- Azure Blockchain
 - More to be added
 
