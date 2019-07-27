@@ -130,6 +130,7 @@ As it is very well known that scalability is a huge challenge that currently lie
 ## Tech Stack Used 
 - Nodejs
 - Solidity
-- Azure Blockchain
+- Azure Workbench
+- Aadhar API
 - More to be added
 
