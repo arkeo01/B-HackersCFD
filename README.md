@@ -40,9 +40,9 @@ Election day is the essence of our democratic country, but conducting the most s
 Any citizen of India with age 18 or above would be registering himself/herself with the help of the election helper component by providing the necesary documents. A cryptographically signed voter id with a QR Code(linked with unique identification detail like fingerprint) and a voToken, token used for voting would be then issued by the system to the citizen allowing him/her to vote.
 
 ##### 2. Voting at the nearby polling station : 
-On reaching the polling station the QR Code would be then scanned and then verified with the unique identification detail of the voter. The list of candidates contesting the elections from the voter's residing constituency would then pop up on the screen from which the voter can select and caste vote. While casting the vote multiple signatures would be required, both of presiding officer and the voter.
+On reaching the polling station the UI (Unique Identity) would be then scanned and then verified with the unique identification detail of the voter. The list of candidates contesting the elections from the voter's residing constituency would then pop up on the screen from which the voter can select and caste vote. While casting the vote multiple signatures would be required, both of presiding officer and the voter.
 
-**DHRUV INCLUDE A FLOW DIAGRAM HERE**
+![Credits- dhruv0000](https://github.com/arkeo01/B-HackersCFD/blob/master/VotingProcess.png)
 
 #### Features :
 ##### 1. Secure Authentication :
