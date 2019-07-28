@@ -117,8 +117,6 @@ Since democracy is based on the satisfaction of its citizens, thus addressing th
 ##### 7. Prevention from missing names : 
 The specified registration process of the voter is such that it itself ensures that no name would be missing from the voters list as the list would be stored in a secured daabase built on blockchain. Moreover the authentication process while voting itself ensures that no name is needed to be verified in the voting list before voting!
 
-**MAYANK MODIFY THE IMAGE BELOW AS PER THE UPDATED CONTENT**
-
 ![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Election_helper_Component.png)
 
 ## Note on scalability :
