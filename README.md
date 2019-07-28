@@ -89,7 +89,7 @@ To ease and make elections more transparent, clean and efficient this component 
 4. A token linked to a constituency would be issued to the person indicating it to be a candidate.
 
 
-**DHRUV INCLUDE A FLOW DIAGRAM HERE**
+![Credits- its-mayank](https://github.com/arkeo01/B-HackersCFD/blob/master/Nomination.png)
 
 #### Features:
 
