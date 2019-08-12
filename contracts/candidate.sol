@@ -1,4 +1,4 @@
-pragma solidity ^0.5.7;
+pragma solidity ^0.5.7;                                  
 
 import "./voterCore.sol";
 
@@ -20,7 +20,7 @@ contract Candidate is VoterCore{
             _aadharno,
             false,
             true,
-            false
+            true
 			);
 		candidates[msg.sender] = candidate;
 		emit candidateRegistered;

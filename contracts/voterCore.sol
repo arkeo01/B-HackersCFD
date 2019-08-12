@@ -14,7 +14,10 @@ contract VoterCore{
     }
     
     mapping(address => Voter) public voters;
+    
     uint public voterNos;
+
+
     event voterRegistered{
         string name,
         uint aadharno
@@ -35,6 +38,32 @@ contract VoterCore{
         
         voters[msg.sender] = voter;
         emit voterRegistered;
+    }
+
+
+    //candidate section starts
+    
+    mapping (address => Voter) public candidates;
+    uint public candidatecount;
+
+    event candidateRegistered{
+        string _name;
+    };
+
+    function addCandidate(string _name, uint _age, uint _constituencyId, uint _pincode,uint _aadharno) public{
+            candidatecount++;
+            Voter memory candidate = Voter(
+            _name,
+            _age,
+            _constituencyId,
+            _pincode,
+            _aadharno,
+            false,
+            true,
+            true
+            );
+        candidates[msg.sender] = candidate;
+        emit candidateRegistered;
     }
     
 }
