@@ -8,18 +8,20 @@ contract VoterCore{
         uint pincode;
         uint aadhaarno;
         bool hasVoted;
-        bool canVote;
+        bool isRegistered;
+        bool isCandidate;
         //some unique cryptographic id has to be given
     }
     
     mapping(address => Voter) public voters;
-    
+    uint public voterNos;
     event voterRegistered{
         string name,
         uint aadharno
     };
     
     function addVoter(string _name, uint _age, uint _constituencyId, uint _pincode,uint _aadharno) public {
+        voterNos++;
         Voter memory voter = Voter(
             _name,
             _age,
@@ -27,6 +29,7 @@ contract VoterCore{
             _pincode,
             _aadharno,
             false,
+            true,
             false
         );
         
@@ -34,11 +37,4 @@ contract VoterCore{
         emit voterRegistered;
     }
     
-    // function isregistered(uint _aadharno)public {
-        
-    // }
-    
-    // function checkaadhar(uint _aadharno) private{
-        
-    // }
 }
