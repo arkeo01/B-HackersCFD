@@ -5,7 +5,7 @@ import "./voter.sol";
 contract Candidate is Voter{
 
 	struct CandidateDetails {
-		bytes32 party;
+		string party;
 		uint constituencyId;
 		bool accepted;                        //Whether the candidate is accepted to participate in elections
 	}
@@ -15,7 +15,7 @@ contract Candidate is Voter{
 	mapping (address => CandidateDetails) candidates;       //Single point access for all candidates to ensure security
 	mapping(address => uint) public votesReceived;          //votes recieved by any candidate
 
-	function addCandidate(bytes32 _party, uint _constituencyId) public {
+	function addCandidate(string memory _party, uint _constituencyId) public {
 		numCandidates++;
 		CandidateDetails memory candidate = CandidateDetails(
 			_party,
@@ -39,7 +39,7 @@ contract Candidate is Voter{
 		candidates[_candidate] = candidate;
 	}
 
-	function getCandidate(address _candidate) public view returns (bytes memory, bytes32) {
+	function getCandidate(address _candidate) public view returns (string memory, string memory) {
 		CandidateDetails memory candidate = candidates[_candidate];
 		VoterDetails memory voter = voters[_candidate];
 		return (voter.name, candidate.party);

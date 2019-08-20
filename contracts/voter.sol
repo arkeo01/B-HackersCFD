@@ -2,14 +2,14 @@ pragma solidity >=0.4.21 <0.6.0;
 
 contract Voter{                                         //password for helper component login functionality to be added
     struct VoterDetails{
-        bytes name;
+        string name;
         uint age;
         uint mobileNo;
         uint constituencyId;
         uint aadhaarno;
         bool voted;
         bool canVote;
-        bytes hashOfFingerprint;                      //unique cryptographic id of the voter to be used while voting
+        string hashOfFingerprint;                      //unique cryptographic id of the voter to be used while voting
     }
 
     uint public numVoters;
@@ -18,7 +18,7 @@ contract Voter{                                         //password for helper co
     address[] public voterAddresses;
 
     event voterRegistered(
-        bytes name,
+        string name,
         uint aadharno
     );
 
@@ -36,12 +36,12 @@ contract Voter{                                         //password for helper co
     }
 
     function addVoter(
-        bytes memory _name,
+        string memory _name,
         uint _age,
         uint _mobileNo,
         uint _constituencyId,
         uint _aadharno,
-        bytes memory _hashOfFingerprint
+        string memory _hashOfFingerprint
         ) public {
 
             voterAddresses.push(msg.sender);
