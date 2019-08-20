@@ -36,7 +36,8 @@ contract Voter is Ownable{                                         //password fo
         uint _aadharno,
         string memory _hashOfFingerprint
         ) public {
-
+		
+	    numVoters++;
             voterAddresses.push(msg.sender);
             VoterDetails memory voter = VoterDetails(
                 _name,
