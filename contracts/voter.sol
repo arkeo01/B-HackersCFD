@@ -1,17 +1,15 @@
 pragma solidity >=0.4.21 <0.6.0;
 
-import "./ownable.sol";
-
-contract Voter is Ownable{                                         //password for helper component login functionality to be added
+contract Voter{                                         //password for helper component login functionality to be added
     struct VoterDetails{
-        string name;
+        bytes name;
         uint age;
         uint mobileNo;
         uint constituencyId;
         uint aadhaarno;
         bool voted;
         bool canVote;
-        string hashOfFingerprint;                      //unique cryptographic id of the voter to be used while voting
+        uint128 hashOfFingerprint;                      //unique cryptographic id of the voter to be used while voting
     }
 
     uint public numVoters;
@@ -20,24 +18,32 @@ contract Voter is Ownable{                                         //password fo
     address[] public voterAddresses;
 
     event voterRegistered(
-        string name,
+        bytes name,
         uint aadharno
     );
+
+    function changeVoterStatus(address _voter) external {    // Security Loophole as this may be accessed by anyone externally
+        VoterDetails memory voter = voters[_voter];
+        if(voter.canVote == false)
+            voter.canVote == true;
+        else
+            voter.canVote == false;
+        voters[_voter] = voter;
+    }
 
     function getNumOfVoters() public view returns(uint) {
         return numVoters;
     }
 
     function addVoter(
-        string memory _name,
+        bytes memory _name,
         uint _age,
         uint _mobileNo,
         uint _constituencyId,
         uint _aadharno,
-        string memory _hashOfFingerprint
+        uint128 _hashOfFingerprint
         ) public {
-		
-	    numVoters++;
+
             voterAddresses.push(msg.sender);
             VoterDetails memory voter = VoterDetails(
                 _name,
