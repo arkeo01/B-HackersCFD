@@ -9,7 +9,7 @@ contract Voter{                                         //password for helper co
         uint aadhaarno;
         bool voted;
         bool canVote;
-        uint128 hashOfFingerprint;                      //unique cryptographic id of the voter to be used while voting
+        bytes hashOfFingerprint;                      //unique cryptographic id of the voter to be used while voting
     }
 
     uint public numVoters;
@@ -41,7 +41,7 @@ contract Voter{                                         //password for helper co
         uint _mobileNo,
         uint _constituencyId,
         uint _aadharno,
-        uint128 _hashOfFingerprint
+        bytes memory _hashOfFingerprint
         ) public {
 
             voterAddresses.push(msg.sender);
