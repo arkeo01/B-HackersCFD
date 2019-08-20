@@ -1,6 +1,6 @@
 pragma solidity >=0.4.21 <0.6.0;
 
-import "./zeppelin/ownable.sol";
+import "./ownable.sol";
 
 contract Voter is Ownable{                                         //password for helper component login functionality to be added
     struct VoterDetails{
@@ -11,7 +11,7 @@ contract Voter is Ownable{                                         //password fo
         uint aadhaarno;
         bool voted;
         bool canVote;
-        uint128 hashOfFingerprint;                      //unique cryptographic id of the voter to be used while voting
+        string hashOfFingerprint;                      //unique cryptographic id of the voter to be used while voting
     }
 
     uint public numVoters;
@@ -34,7 +34,7 @@ contract Voter is Ownable{                                         //password fo
         uint _mobileNo,
         uint _constituencyId,
         uint _aadharno,
-        uint128 _hashOfFingerprint
+        string memory _hashOfFingerprint
         ) public {
 
             voterAddresses.push(msg.sender);
