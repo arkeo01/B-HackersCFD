@@ -88,4 +88,8 @@ contract Election is Ownable{
         }
 		return false;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master

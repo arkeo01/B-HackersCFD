@@ -37,4 +37,8 @@ contract VoToken is Ownable, TokenERC20 {
 		return (balanceOf[_voter]);
 	}
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master

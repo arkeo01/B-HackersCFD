@@ -15,6 +15,8 @@ contract Candidate is Voter{
 	mapping (address => CandidateDetails) candidates;       //Single point access for all candidates to ensure security
 	mapping(address => uint) public votesReceived;          //votes recieved by any candidate
 
+	address[] public candidateAddresses;					//Candidate Addresses
+
 	function addCandidate(string memory _party, uint _constituencyId) public {
 		numCandidates++;
 		CandidateDetails memory candidate = CandidateDetails(
@@ -23,6 +25,10 @@ contract Candidate is Voter{
 			false
 		);
 		candidates[msg.sender] = candidate;
+	}
+
+	function addCandidateAddress(address _candidate) external {
+		candidateAddresses.push(_candidate);
 	}
 
 	function getNumOfCandidates() public view returns(uint) {
@@ -49,7 +55,8 @@ contract Candidate is Voter{
 		return (votesReceived[_candidate]);
 	}
 
-	function voteForCandidate(address _candidate) external {			//voTokens are to be integrated
+	function voteCandidate(address _candidate) external returns(bool){
 		votesReceived[_candidate] += 1;
+		return true;
 	}
 }
