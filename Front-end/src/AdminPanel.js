@@ -1,60 +1,89 @@
 import React, { Component } from "react";
-import { Switch, Route, Prompt, Redirect, matchPath } from "react-router-dom";
-import { Formik, Form } from "formik";
+import { Switch, Route, Prompt, Redirect, matchPath,Link } from "react-router-dom";
+
+import { Page, Card, Grid, Form, Button, Dropdown,Table } from "tabler-react";
 
 import Aadhar from "./Aadhar";
 import OTP from "./OTP";
 import Hash from "./Hash";
 import Success from "./RequestGenerated";
 import Nomination from './Nomination';
+import VoterValidation from "./VoterValidation";
+import ConstiuencyCreation from "./ConstiuencyCreation";
+import CandidateValidation from "./CandidateValidation";
 
-class VoterID extends Component {
-  state = {
-    submitted: false,
-  };
-  
-  handleSubmit = () => {
-    this.setState(
-      {
-        submitted: true,
-      },
-      () => this.props.history.push("/"),
-    );
-  };
+class AdminPanel extends Component {
   
   render() {
     return (
-      <div>
-        <Prompt
-          when={!this.state.submitted}
-          message={({ pathname }) => {
-            return matchPath(pathname, { path: "/VoterID" })
-              ? true
-              : "Are you sure you want to navigate away?";
-          }}
-        />
-        <Formik
-          initialValues={{
-            aadharNo: "",
-            phoneNo: "",
-            OTP: "",
-            hash: "",
-          }}
-          onSubmit={this.handleSubmit}
-        >
-          <Form>
-            <Switch>
-              <Redirect from="/voterID" exact to="voterID/Aadhar" />
-              <Route path="/voterID/Aadhar" component={Aadhar} />
-              <Route path="/voterID/OTP" component={OTP} />
-              <Route path="/voterID/Hash" component={Hash} />
-              <Route path="/voterID/Success" component={Success} />
-            </Switch>
-          </Form>
-        </Formik>
-      </div>
+      
+        <div className="Login" alignContent="center" verticalAlign="center">
+              <Grid.Row alignContent="center">
+              <Grid.Col cards deck width={4} verticalAlign="center">
+                  
+              <Page.Card alignContent="center" verticalAlign="center"> 
+              <Table verticalAlign="center">
+              <Table.Row >
+                    <Table.Col alignContent="center">
+                    <h1>Voter Validation</h1>
+                    </Table.Col>
+                  </Table.Row> 
+                  <Table.Row>
+                      <Table.Col alignContent="center">
+                      
+                      <Link to="/adminPanel/voterValidation" color="primary" className="next">Start</Link>
+                      </Table.Col>
+                      </Table.Row>   
+              </Table>
+              </Page.Card>
+              </Grid.Col>
+              <Grid.Col cards deck width={4} verticalAlign="center">
+                  
+              <Page.Card alignContent="center" verticalAlign="center"> 
+              <Table verticalAlign="center">
+                  <Table.Row >
+                    <Table.Col alignContent="center">
+                    <h1>Candidate Nomination Verification</h1>
+                    </Table.Col>
+                  </Table.Row>
+                  <Table.Row>
+                      <Table.Col alignContent="center">
+                      
+                      <Link to="/adminPanel/candidateValidation" color="primary" className="next">Start</Link>
+                      </Table.Col>
+                      </Table.Row>   
+              </Table>
+              </Page.Card>
+              </Grid.Col>
+              <Grid.Col cards deck width={4} verticalAlign="center">
+                  
+              <Page.Card alignContent="center" verticalAlign="center"> 
+              <Table verticalAlign="center">
+                  <Table.Row >
+                    <Table.Col alignContent="center">
+                    <h1>Constiuency Creation</h1>
+                    </Table.Col>
+                  </Table.Row>
+                  <Table.Row>
+                      <Table.Col alignContent="center">
+                      
+                      <Link to="/adminPanel/constiuencyCreation" color="primary" className="next">Start</Link>
+                      </Table.Col>
+                      </Table.Row>   
+              </Table>
+              </Page.Card>
+              </Grid.Col>
+              </Grid.Row>
+        
+        <Switch>
+    <Route path="/adminPanel" exact render={() => <div></div> }/>
+          <Route path="/adminPanel/voterValidation" component={VoterValidation} />
+          <Route path="/adminPanel/candidateValidation" component={CandidateValidation} />
+          <Route path="/adminPanel/constiuencyCreation" component={ConstiuencyCreation} />
+        </Switch>
+          </div>
     );
   }
 }
 
-export default VoterID;
+export default AdminPanel;
