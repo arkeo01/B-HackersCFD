@@ -1,0 +1,45 @@
+#home {
+    background: url('./Photo/india.jpg') fixed;
+    background-color: gray;
+    background-attachment: fixed !important;
+    background-size: auto;
+    height: 100vh;
+    /*background-position: center center;*/
+    display: -webkit-box;
+  /*  display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;*/
+    -webkit-box-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  /*  -webkit-align-items: center;*/
+   /* -ms-flex-align: center;*/
+    /* align-items: center;*/
+    
+    /*position: relative;*/
+   /* text-align: right;*/
+  }
+
+  .home_text {
+   vertical-align: middle;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 500px;
+  }
+  .bg-text {
+    color: white;
+    font-size:100px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
