@@ -1,8 +1,24 @@
 .links {
-  margin-bottom: 10px;
+ 
+  top:0;left:0;
+  width:100%;height:70px;line-height:70px;
+  background: #fff;
+  position: relative;
+  text-align:center;
 }
 .link {
-  margin: 0 10px;
+  opacity: 0.5;
+  font-weight:500;
+  color: #222230;
+  text-transform:uppercase;
+  transition:0.2s all ease-in-out;
+  -webkit-transition:0.2s all ease-in-out;
+  display:inline-block;
+  margin:0 40px;
+}
+
+.link:hover {
+    opacity: 1 !important;
 }
 
 .App {
