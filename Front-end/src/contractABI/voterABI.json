@@ -45,7 +45,7 @@
             "name": "changeVoterStatus",
             "outputs": [],
             "payable": false,
-            "stateMutability": "nonpayable",
+            "stateMuanonymoustability": "nonpayable",
             "type": "function"
         },
         {
@@ -179,8 +179,4 @@
             "type": "function"
         }
     ]
-<<<<<<< HEAD:Front-end/src/contractABI/voterABI.json
 }
-=======
-}
->>>>>>> master:Front-end/src/voterABI.json
