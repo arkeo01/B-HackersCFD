@@ -5,6 +5,8 @@ import VoterID from './VoterID'
 import Nomination from './Nomination'
 import Vote from './Vote'
 import AdminPanel from './AdminPanel'
+import Result from './Result
+
 
 const Utils = require('./utils')
 
@@ -39,6 +41,9 @@ class App extends React.Component {
 					<Link to="/adminPanel" className="link">
 						Admin Panel  
 					</Link>
+					<Link to="/result" className="link">
+					  Result
+					</Link>
 				</div>
 
 				<div className="tabs">
@@ -48,6 +53,7 @@ class App extends React.Component {
 					<Route path="/nomination" component={Nomination} />
 					<Route path="/vote" component={Vote} />
 					<Route path="/adminPanel" component={AdminPanel} />
+          				<Route path="/result" component={Result} />
 				</Switch>
 				</div>
 
