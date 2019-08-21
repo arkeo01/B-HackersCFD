@@ -10,7 +10,11 @@ class OTP extends Component {
 
   handleOnClick = () =>  {
     var added = Utils.voterAdd();
+<<<<<<< HEAD
     return <Redirect to="/voterID/Success" />     //This Router is not working will have ot fix this
+=======
+    return <Redirect to="/voterID/Success" />
+>>>>>>> master
   }
 
   render() {

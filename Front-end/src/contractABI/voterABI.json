@@ -179,4 +179,8 @@
             "type": "function"
         }
     ]
+<<<<<<< HEAD:Front-end/src/contractABI/voterABI.json
 }
+=======
+}
+>>>>>>> master:Front-end/src/voterABI.json
