@@ -1,10 +1,18 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import "./tabler-react/dist/Tabler.css";
  
 import { Page, Card, Grid, Form, Button, Dropdown,Table } from "tabler-react";
-import './utils';
+const Utils = require('./utils');
+
+
 class OTP extends Component {
+
+  handleOnClick = () =>  {
+    var added = Utils.voterAdd();
+    return <Redirect to="/voterID/Success" />     //This Router is not working will have ot fix this
+  }
+
   render() {
     return (
     
@@ -24,7 +32,8 @@ class OTP extends Component {
                             type="text"
                         />
                     <Form.InputGroupAppend>
-                        <Link to="/voterID/Success" color="primary" className="next">Verify</Link>  
+                    <Button color="primary" type="button" onClick={this.handleOnClick}>Button</Button>
+                    <Link to="/voterID/Success" color="primary" className="next">OK</Link>  
                     </Form.InputGroupAppend>
                   </Form.InputGroup>
                     </Card>

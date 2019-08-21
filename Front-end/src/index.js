@@ -4,55 +4,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import './App.css';
-import Home from './Home'
-import VoterID from './VoterID'
-import Nomination from './Nomination'
-import Vote from './Vote'
-import AdminPanel from './AdminPanel'
-import './utils'
 
-const rootElement = document.getElementById("root");
+import './utils';
+import { setProvider } from './utils';
 
-const routes = (
-  < BrowserRouter>
-    <div>
-      
-      <div className="links">
-        <Link to="/" className="link">
-          Home
-        </Link>
-        <Link to="/voterID" className="link">
-          Voter Registeration
-        </Link>
-        <Link to="/nomination" className="link">
-          Candidate Nomination
-        </Link>
-        <Link to="/vote" className="link">
-          Cast your vote
-        </Link>
-        <Link to="/adminPanel" className="link">
-          Admin Panel
-        </Link>
-      </div>
-
-      <div className="tabs">
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/voterID" component={VoterID} />
-          <Route path="/nomination" component={Nomination} />
-          <Route path="/vote" component={Vote} />
-          <Route path="/adminPanel" component={AdminPanel} />
-        </Switch>
-      </div>
-
-    </div>
-  </BrowserRouter>
-);
+let rootElement =  document.getElementById("root")
 
 if (rootElement) {
-  ReactDOM.render(routes, rootElement);
+  	ReactDOM.render(<App />,  document.getElementById("root"))
 } else {
-  throw new Error("Could not find root element to mount to!");
-}
+  	throw new Error("Could not find root element to mount to!")
+}	

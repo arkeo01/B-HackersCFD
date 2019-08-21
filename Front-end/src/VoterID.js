@@ -7,21 +7,14 @@ import OTP from "./OTP";
 import Hash from "./Hash";
 import Success from "./RequestGenerated";
 import Nomination from './Nomination';
-import './utils';
+import { voterAdd } from './utils'
 
 class VoterID extends Component {
   state = {
     submitted: false,
   };
-  
-  handleSubmit = () => {
-    this.setState(
-      {
-        submitted: true,
-      },
-      () => this.props.history.push("/"),
-    );
-  };
+   
+  handleSubmit = () => {voterAdd()};
   
   render() {
     return (
@@ -42,7 +35,7 @@ class VoterID extends Component {
             hash: "",
           }}
           onSubmit={this.handleSubmit}
-        >
+        >  
           <Form>
             <Switch>
               <Redirect from="/voterID" exact to="voterID/Aadhar" />

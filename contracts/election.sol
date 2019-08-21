@@ -22,9 +22,13 @@ contract CandidateInterface{
 
 contract Election is Ownable{
 
-    VoterInterface voterContract;
-    VoTokenInterface voTokenContract;
-    CandidateInterface candidateContract;
+    address voterContractAddress = 000xed520b1053e81b55993f2dee132ae10d8f4d3ca5;
+    address candidateContractAddress = 000x861c9de4f7d94de838d02e936a91b694e09290aa;
+    address voTokenContractAddress = 000xb3efdc1bcba042691f51b364e5ea67e6a1283338;
+
+    VoterInterface voterContract = VoterInterface(voterContractAddress);
+    VoTokenInterface voTokenContract  = VoTokenInterface(voTokenContractAddress);
+    CandidateInterface candidateContract = CandidateInterface(candidateContractAddress);
 
     uint voTokenValue = 10;
 
@@ -33,7 +37,7 @@ contract Election is Ownable{
         string name;
     }
 
-    uint public numConstituency;
+    uint public numConstituency;  
 
     mapping (uint => Constituency) public constituencies;   //all constituencies
     mapping (uint => address[]) public constCandidates;     //candidate participating in a particular constituency
@@ -88,8 +92,4 @@ contract Election is Ownable{
         }
 		return false;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> master

@@ -1,29 +1,60 @@
 import React from 'react';
-import './App.css';
-import Login from './Login'
-import Ballot from './ballot'
-import "./tabler-react/dist/Tabler.css";
-import Aadhar from './Aadhar'
-import OTP from './OTP'
-import Success from './RequestGenerated'
-import Test from './Test'
-import './utils';
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import Home from './Home'
+import VoterID from './VoterID'
+import Nomination from './Nomination'
+import Vote from './Vote'
+import AdminPanel from './AdminPanel'
+
+const Utils = require('./utils')
 
 
 class App extends React.Component {
   
-  render() {
-  return (
-    <div>
-      <Success />
-      <Aadhar />
-      <OTP />
-      <Login />
-      <Ballot />
+	constructor(){
+		super()
+	}
 
-    </div>
-  );
-  }
+	componentDidMount(){
+		Utils.setProvider()
+	}
+
+	render() {
+		return (
+			< BrowserRouter>
+			<div>
+				<div className="links">
+					<Link to="/" className="link">
+						Home
+					</Link>
+					<Link to="/voterID" className="link">
+						Voter Registeration
+					</Link>
+					<Link to="/nomination" className="link">
+						Candidate Nomination
+					</Link>
+					<Link to="/vote" className="link">
+						Cast your vote
+					</Link>
+					<Link to="/adminPanel" className="link">
+						Admin Panel  
+					</Link>
+				</div>
+
+				<div className="tabs">
+				<Switch>
+					<Route path="/" exact component={Home} />
+					<Route path="/voterID" component={VoterID} />
+					<Route path="/nomination" component={Nomination} />
+					<Route path="/vote" component={Vote} />
+					<Route path="/adminPanel" component={AdminPanel} />
+				</Switch>
+				</div>
+
+			</div>
+			</BrowserRouter>
+		);
+  	}
 
 }
 

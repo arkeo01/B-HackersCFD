@@ -1,24 +1,5 @@
 {
-    "abi":
-    [
-        {
-            "constant": false,
-            "inputs": [
-                {
-                    "name": "_party",
-                    "type": "string"
-                },
-                {
-                    "name": "_constituencyId",
-                    "type": "uint256"
-                }
-            ],
-            "name": "addCandidate",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
+    "abi":  [
         {
             "constant": false,
             "inputs": [
@@ -57,39 +38,11 @@
             "constant": false,
             "inputs": [
                 {
-                    "name": "_candidate",
-                    "type": "address"
-                }
-            ],
-            "name": "changeCandidateStatus",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "constant": false,
-            "inputs": [
-                {
                     "name": "_voter",
                     "type": "address"
                 }
             ],
             "name": "changeVoterStatus",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "constant": false,
-            "inputs": [
-                {
-                    "name": "_candidate",
-                    "type": "address"
-                }
-            ],
-            "name": "voteForCandidate",
             "outputs": [],
             "payable": false,
             "stateMutability": "nonpayable",
@@ -114,68 +67,31 @@
         },
         {
             "constant": true,
-            "inputs": [
-                {
-                    "name": "_candidate",
-                    "type": "address"
-                }
-            ],
-            "name": "getCandidate",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "string"
-                },
-                {
-                    "name": "",
-                    "type": "string"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [
-                {
-                    "name": "_candidate",
-                    "type": "address"
-                }
-            ],
-            "name": "getCandidateVotes",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [],
-            "name": "getNumOfCandidates",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
             "inputs": [],
             "name": "getNumOfVoters",
             "outputs": [
                 {
                     "name": "",
                     "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "_voter",
+                    "type": "address"
+                }
+            ],
+            "name": "getVoterStatus",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
                 }
             ],
             "payable": false,
@@ -261,25 +177,6 @@
             "payable": false,
             "stateMutability": "view",
             "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [
-                {
-                    "name": "",
-                    "type": "address"
-                }
-            ],
-            "name": "votesReceived",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
         }
     ]
-  }
+}
