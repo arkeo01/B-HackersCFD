@@ -76,10 +76,10 @@ contract Election is Ownable{
 		return candidateContract.getCandidateVotes(_candidate);
 	}
 
-	function voteForCandidate(address _candidate, uint _constituencyId, address _voter) public returns(bool) {
+	function voteForCandidate(address _candidate, uint _constituencyId) public returns(bool) {
 		require(validCandidate(_candidate, _constituencyId), "Not a Valid Candidate");
-		require(voTokenContract.getBalance(_voter) >= voTokenValue && voterContract.getVoterStatus(_voter) == true, "Not a valid Voter");
-        bool burned = voTokenContract.burnFrom(voTokenValue, _voter);
+		require(voTokenContract.getBalance(msg.sender) >= voTokenValue && voterContract.getVoterStatus(msg.sender) == true, "Not a valid Voter");
+        bool burned = voTokenContract.burnFrom(voTokenValue, msg.sender);
         require(burned == true, "Not Issued VoTokens");
         bool counted = candidateContract.voteCandidate(_candidate);
         return (burned && counted);

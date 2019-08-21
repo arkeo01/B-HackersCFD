@@ -12,7 +12,6 @@ class CandidateForm extends Component {
     
     handleOnClick = () =>  {
         var added = Utils.candidateAdd();
-        return <Redirect to="/nomination/Success" />     //This Router is not working will have ot fix this
     }
     
     render() {
@@ -45,8 +44,7 @@ class CandidateForm extends Component {
                             <Form.Group label="Upload required Documents">
                                 <Form.FileInput />
                             </Form.Group>
-                            <Button color="primary" type="button" onClick={this.handleOnClick}>Button</Button>
-                            <Link to="/nomination/Success" color="primary" className="next">Apply</Link>
+                            <Button color="primary" type="button" onClick={this.handleOnClick}>Apply</Button>
                         </Form.FieldSet>
                 </Table>
                 </Page.Card>

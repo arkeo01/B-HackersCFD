@@ -26,16 +26,15 @@ import {
     Form
 } from "tabler-react";
 
-// const Utils = require('./utils');
+const Utils = require('./utils');
 
 
 class Ballot extends Component {
 	//const candidateComponents = candidates.map(candidateItem => <CandidateDetails key={candidateItem.id}  candidate={candidateItem} />)
 
-	// handleOnClick1 = (candidateaddress) =>  {
-	// 	var added = Utils.voteforCandidate(candidateaddress, 12);
-	// 	return <Redirect to="/voterID/Success" />     //This Router is not working will have ot fix this
-	// }
+	handleOnClick = (candidateaddress) =>  {
+		var added = Utils.voteforCandidate(candidateaddress, 12);
+	}
 
 	// handleOnClick2 = (candidateaddress) =>  {
 	// 	var added = Utils.voteforCandidate(candidateaddress, 12);
@@ -79,7 +78,6 @@ class Ballot extends Component {
 							</Table.Header>
 							<Table.Body>
 								<Table.Row>
-									{/* <<Button color="primary" type="button" onClick={this.handleOnClick1}>Vote</Button> */}
 									<Table.Col alignContent="center">
 									<Avatar
 										imageURL="demo/faces/female/26.jpg"
@@ -109,7 +107,7 @@ class Ballot extends Component {
 									</Table.Col>
 									<Table.Col alignContent="center">
 										
-									{/* //<Button color="primary" type="button" onClick={this.handleOnClick1}>Vote</Button> */}
+									<Button color="primary" type="button" onClick={() => {this.handleOnClick1(0xDcbaf563b81Ee5D2341E9Fa89761c4A53a82a956)}}>Vote</Button>
 
 									</Table.Col>
 								</Table.Row>
@@ -145,7 +143,7 @@ class Ballot extends Component {
 									</Table.Col>
 									<Table.Col alignContent="center">
 
-									{/* <Button color="primary" type="button" onClick={this.handleOnClick2}>Vote</Button> */}
+									<Button color="primary" type="button" onClick={() => {this.handleOnClick1(0x323c117FFBe6C4D33Be10dB1e38dE8abF66C1Cf2)}}>Vote</Button>
 
 									</Table.Col>
 								</Table.Row>
@@ -181,14 +179,13 @@ class Ballot extends Component {
 									</Table.Col>
 									<Table.Col alignContent="center">
 									
-									{/* <Button color="primary" type="button" onClick={this.handleOnClick3}>Vote</Button> */}
+									<Button color="primary" type="button" onClick={() => {this.handleOnClick1(0x2aF585f0fd5bD3931F8CA94e240Adea082Cf3661)}}>Vote</Button>
 									</Table.Col>
 								</Table.Row>
 							</Table.Body>
 							
 						</Table>
 				</Card>
-				<Link to="/vote/success" color="primary" className="next">Vote</Link>
 				</Page.Content>
 				</div>
 			</Grid.Col>

@@ -1,7 +1,7 @@
 const candidates = [
     {
         id : "1",
-        candidateName : "Gautam Gambhir",
+        candidateName : "Aatishi Gambhir",
         age : 47,
         party : "BJP",
         constituencyName : "East Delhi",
@@ -12,7 +12,7 @@ const candidates = [
 
     {
         id : "2",
-        candidateName : "Aatishi Marlena",
+        candidateName : "Gautam Marlena",
         age : 35,
         party : "AAP",
         constituencyName : "East Delhi",
@@ -23,7 +23,7 @@ const candidates = [
 
     {
         id : "3",
-        candidateName : "Arvinder Singh Lovely",
+        candidateName : "Jaspreet Singh Lovely",
         age : 56,
         party : "INC",
         constituencyName : "East Delhi",

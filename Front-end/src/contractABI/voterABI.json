@@ -4,40 +4,6 @@
             "constant": false,
             "inputs": [
                 {
-                    "name": "_name",
-                    "type": "string"
-                },
-                {
-                    "name": "_age",
-                    "type": "uint256"
-                },
-                {
-                    "name": "_mobileNo",
-                    "type": "uint256"
-                },
-                {
-                    "name": "_constituencyId",
-                    "type": "uint256"
-                },
-                {
-                    "name": "_aadharno",
-                    "type": "uint256"
-                },
-                {
-                    "name": "_hashOfFingerprint",
-                    "type": "string"
-                }
-            ],
-            "name": "addVoter",
-            "outputs": [],
-            "payable": false,
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "constant": false,
-            "inputs": [
-                {
                     "name": "_voter",
                     "type": "address"
                 }
@@ -45,25 +11,22 @@
             "name": "changeVoterStatus",
             "outputs": [],
             "payable": false,
-            "stateMuanonymoustability": "nonpayable",
+            "stateMutability": "nonpayable",
             "type": "function"
         },
         {
-            "anonymous": false,
-            "inputs": [
+            "constant": true,
+            "inputs": [],
+            "name": "numVoters",
+            "outputs": [
                 {
-                    "indexed": false,
-                    "name": "name",
-                    "type": "string"
-                },
-                {
-                    "indexed": false,
-                    "name": "aadharno",
+                    "name": "",
                     "type": "uint256"
                 }
             ],
-            "name": "voterRegistered",
-            "type": "event"
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
         },
         {
             "constant": true,
@@ -92,39 +55,6 @@
                 {
                     "name": "",
                     "type": "bool"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [],
-            "name": "numVoters",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "payable": false,
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "constant": true,
-            "inputs": [
-                {
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "name": "voterAddresses",
-            "outputs": [
-                {
-                    "name": "",
-                    "type": "address"
                 }
             ],
             "payable": false,
@@ -177,6 +107,76 @@
             "payable": false,
             "stateMutability": "view",
             "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_name",
+                    "type": "string"
+                },
+                {
+                    "name": "_age",
+                    "type": "uint256"
+                },
+                {
+                    "name": "_mobileNo",
+                    "type": "uint256"
+                },
+                {
+                    "name": "_constituencyId",
+                    "type": "uint256"
+                },
+                {
+                    "name": "_aadharno",
+                    "type": "uint256"
+                },
+                {
+                    "name": "_hashOfFingerprint",
+                    "type": "string"
+                }
+            ],
+            "name": "addVoter",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "voterAddresses",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "name": "aadharno",
+                    "type": "uint256"
+                }
+            ],
+            "name": "voterRegistered",
+            "type": "event"
         }
     ]
 }

@@ -10,9 +10,9 @@ const Web3 = require('web3');
 let metamaskWeb3 = new Web3('http://localhost:8545')
 let account = null
 let voterContract, candidateContract, electionContract, tokenERC20Contract, voTokenContract
-let voterContractAddress = '0xed520b1053e81b55993f2dee132ae10d8f4d3ca5' // Paste Contract address here
-let candidateContractAddress = '0x861c9de4f7d94de838d02e936a91b694e09290aa' // Paste Contract address here
-let tokenERC20ContractAddress = '0x2bfc884b36cae581ee64b347bd8388d9296d16ec' // Paste Contract address here
+let voterContractAddress = '0xd8e901fec68a12b617a19590f44b331d16d394cb' // Paste Contract address here
+let candidateContractAddress = '0xc8772a040787c0f91800b81efccbbeb9b6bb044b' // Paste Contract address here
+let tokenERC20ContractAddress = '0x11ef2607bb4f3f71c42a8b4f63daa14cd1e45bc4' // Paste Contract address here
 let voTokenContractAddress = '0xb3efdc1bcba042691f51b364e5ea67e6a1283338' // Paste Contract address here
 let electionContractAddress = '0xed520b1053e81b55993f2dee132ae10d8f4d3ca5' // Paste Contract address here
 
@@ -100,7 +100,6 @@ export async function constituencyAdd(constituencyid, name) {
   // TODO: to add constituency function from election.sol
   const prop = await getElectionContract().methods.createConstituency(constituencyid, name).send({
     from: account[0],
-    value: 1,
   })
   alert('Constituency added Successfully')
 }
@@ -109,15 +108,14 @@ export async function voterValidation(voteraddress) {
   // TODO: call addcandidate from candidate.sol
   const prop = await getElectionContract().methods.validateVoter(voteraddress).send({
     from: account[0],
-    value: 1,
   })
+  alert('Voter Validated Successfully')
 }
 
 export async function votertoconstituency(constituencyid,voteraddress) {
   // TODO: call voter to constituency from election.sol
   const prop = await getElectionContract().methods.addVoterToConstituency(constituencyid,voteraddress).send({
     from: account[0],
-    value: 1,
   })
 }
 
@@ -125,7 +123,6 @@ export async function candidatetoconstituency(constituencyid, candidateaddress) 
   // TODO: call addCandidateToConstituency form election.sol
   const prop = await getElectionContract().methods.addCandidateToConstituency(constituencyid, candidateaddress).send({
     from: account[0],
-    value: 1,
   })
 }
 
@@ -133,7 +130,6 @@ export async function totalVotes(candidateaddress, constituencyid) {
   // TODO: get total votes from election.sol
   const prop = await getElectionContract().methods.totalVotesFor(candidateaddress, constituencyid).send({
     from: account[0],
-    value: 1,
   })
   return prop;
 }
@@ -142,9 +138,8 @@ export async function voteforCandidate(candidateaddress, constituencyid) {
   // TODO: get total votes from election.sol
   const prop = await getElectionContract().methods.voteForCandidate(candidateaddress, constituencyid).send({
     from: account[0],
-    value: 1,
   })
-  return prop;
+  alert('Vote casted Successfully')
 }
 
 
