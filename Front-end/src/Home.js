@@ -10,10 +10,6 @@ class Home extends Component {
           <p>Lets Elect</p>
         </div>
         </section>
-        
-        <section id="about" >
-          <h1>About</h1>
-        </section>
       </div>
     );
   }
