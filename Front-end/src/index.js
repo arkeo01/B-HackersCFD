@@ -1,10 +1,10 @@
+//require('dotenv').config();
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-
 import './App.css';
 import Home from './Home'
 import VoterID from './VoterID'

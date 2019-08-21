@@ -1,6 +1,7 @@
 import voterABI from './voterABI'
 import candidateABI from './candidateABI'
-var Web3 = require("Web3");
+import electionABI from './electionABI'
+var Web3 = require("web3");
 // var provider = new Web3.providers.HttpProvider("https://user.blockchain.azure.com:3200/QfZMn5Qgr4NYV8EEp9wHi6fQ");
 // var web3 = new Web3(provider);
 //import Web3 from 'web3'
@@ -50,6 +51,13 @@ function candidateContract() {
 
 }
 
+function electionContract() {
+  // TODO: create and return contract Object of candidate instance
+  electionContract = electionContract || new metamaskWeb3.eth.Contract(electionABI.abi, voterContractAddress)
+  return electionContract
+
+}
+
 
 
 export async function voterAdd() {
@@ -61,21 +69,83 @@ export async function voterAdd() {
 }
 
 export async function voterNum() {
-  // TODO: call voter.addvideo
+  // TODO: call voter.numVideo
   const prop = await getvoterContract().methods.getNumOfVoters().send({
     from: account[0]
   })
   return prop;
 }
 
-// export async function candidateAdd(name, age, constituencyid, pincode, aadharno) {
-//   // TODO: call voter.rentSpace
-//   const prop = await getvoterContract().methods.addCandidate(videoId).send({
-//     from: account[0],
-//     value: 1,
-//   })
-//   alert('Candidate added Successfully')
-// }
+export async function candidateAdd(party,constituencyid) {
+  // TODO: call addcandidate from candidate.sol
+  const prop = await candidateContract().methods.addCandidate(party, constituencyid).send({
+    from: account[0],
+    value: 1,
+  })
+  alert('Candidate added Successfully')
+}
+
+export async function candidateNum() {
+  // TODO: call candidateNum from the candidate.sol
+  const prop = await getcandidateContract().methods.getNumOfCandidates().send({
+    from: account[0]
+  })
+  return prop;
+}
+
+export async function constituencyAdd(constituencyid, name) {
+  // TODO: to add constituency function from election.sol
+  const prop = await electionContract().methods.createConstituency(constituencyid, name).send({
+    from: account[0],
+    value: 1,
+  })
+  alert('Constituency added Successfully')
+}
+
+export async function voterValidation(voteraddress) {
+  // TODO: call addcandidate from candidate.sol
+  const prop = await electionContract().methods.validateVoter(voteraddress).send({
+    from: account[0],
+    value: 1,
+  })
+}
+
+export async function votertoconstituency(constituencyid,voteraddress) {
+  // TODO: call voter to constituency from election.sol
+  const prop = await electionContract().methods.addVoterToConstituency(constituencyid,voteraddress).send({
+    from: account[0],
+    value: 1,
+  })
+}
+
+export async function candidatetoconstituency(constituencyid, candidateaddress) {
+  // TODO: call addCandidateToConstituency form election.sol
+  const prop = await electionContract().methods.addCandidateToConstituency(constituencyid, candidateaddress).send({
+    from: account[0],
+    value: 1,
+  })
+}
+
+export async function totalVotes(candidateaddress, constituencyid) {
+  // TODO: get total votes from election.sol
+  const prop = await electionContract().methods.totalVotesFor(candidateaddress, constituencyid).send({
+    from: account[0],
+    value: 1,
+  })
+  return prop;
+}
+
+export async function candidateVotes(candidateaddress, constituencyid) {
+  // TODO: get total votes from election.sol
+  const prop = await electionContract().methods.voteForCandidate(candidateaddress, constituencyid).send({
+    from: account[0],
+    value: 1,
+  })
+  return prop;
+}
+
+
+
 
 // export async function fetchAllVoters() {
 //   // TODO: call voter.propertyId
