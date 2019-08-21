@@ -5,7 +5,7 @@ import VoterID from './VoterID'
 import Nomination from './Nomination'
 import Vote from './Vote'
 import AdminPanel from './AdminPanel'
-import Result from './Result
+import Result from './Result'
 
 
 const Utils = require('./utils')
