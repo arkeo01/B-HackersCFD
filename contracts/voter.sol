@@ -9,7 +9,7 @@ contract Voter{                                         //password for helper co
         uint aadhaarno;
         bool voted;
         bool canVote;
-        string hashOfFingerprint;                      //unique cryptographic id of the voter to be used while voting
+        uint128 hashOfFingerprint;                      //unique cryptographic id of the voter to be used while voting
     }
 
     uint public numVoters;
@@ -21,6 +21,10 @@ contract Voter{                                         //password for helper co
         string name,
         uint aadharno
     );
+
+    function getVoterStatus(address _voter) external view returns(bool) {
+        return (voters[_voter].canVote);
+    }
 
     function changeVoterStatus(address _voter) external {    // Security Loophole as this may be accessed by anyone externally
         VoterDetails memory voter = voters[_voter];
@@ -41,9 +45,9 @@ contract Voter{                                         //password for helper co
         uint _mobileNo,
         uint _constituencyId,
         uint _aadharno,
-        string memory _hashOfFingerprint
+        uint128 _hashOfFingerprint
         ) public {
-
+            numVoters++;
             voterAddresses.push(msg.sender);
             VoterDetails memory voter = VoterDetails(
                 _name,
